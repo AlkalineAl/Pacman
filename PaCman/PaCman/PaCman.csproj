@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD9C4788-3925-46E2-8C65-51AEB4C873E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaCman</RootNamespace>
+    <AssemblyName>PaCman</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Packman\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Packman</ProductName>
+    <PublisherName>AlkalineAl Games</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\MainIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BD2B2D679C9EF8E9095DC4BB17BCBBF6C5F2BF1A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PaCman_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apple.cs" />
+    <Compile Include="AppleImg.cs" />
+    <Compile Include="Controller_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controller_MainForm.Designer.cs">
+      <DependentUpon>Controller_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeadSpirit.cs" />
+    <Compile Include="DeadSpiritsImg.cs" />
+    <Compile Include="GameStatus.cs" />
+    <Compile Include="Hunter.cs" />
+    <Compile Include="HunterImg.cs" />
+    <Compile Include="ICurentPicture.cs" />
+    <Compile Include="IPicture.cs" />
+    <Compile Include="IRun.cs" />
+    <Compile Include="ITransparent.cs" />
+    <Compile Include="ITurn.cs" />
+    <Compile Include="ITurnAround.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Packman.cs" />
+    <Compile Include="PackmanImg.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Projectile.cs" />
+    <Compile Include="ProjectileImg.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tank.cs" />
+    <Compile Include="TankImg.cs" />
+    <Compile Include="View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View.Designer.cs">
+      <DependentUpon>View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wall.cs" />
+    <Compile Include="WallImg.cs" />
+    <EmbeddedResource Include="Controller_MainForm.resx">
+      <DependentUpon>Controller_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View.resx">
+      <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="PaCman_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Image11.bmp" />
+    <None Include="Resources\PacImg_10III.bmp" />
+    <None Include="Resources\PacImg_10I.bmp" />
+    <None Include="Resources\PacImg10I.bmp" />
+    <None Include="Resources\PacImg10III.bmp" />
+    <None Include="Resources\PacImg10.bmp" />
+    <None Include="Resources\PacImg0_1III.bmp" />
+    <None Include="Resources\PacImg0_1.bmp" />
+    <None Include="Resources\PacImg0_1I.bmp" />
+    <None Include="Resources\PacImg01III.bmp" />
+    <None Include="Resources\PacImg01.bmp" />
+    <None Include="Resources\PacImg01I.bmp" />
+    <None Include="Resources\Hunter01.bmp" />
+    <None Include="Resources\Hunter01I.bmp" />
+    <None Include="Resources\Hunter01II.bmp" />
+    <None Include="Resources\Hunter01III.bmp" />
+    <None Include="Resources\Hunter01IV.bmp" />
+    <None Include="Resources\Hunter_10.bmp" />
+    <None Include="Resources\Hunter_10I.bmp" />
+    <None Include="Resources\Hunter_10II.bmp" />
+    <None Include="Resources\Hunter_10III.bmp" />
+    <None Include="Resources\Hunter_10IV.bmp" />
+    <None Include="Resources\Hunter10.bmp" />
+    <None Include="Resources\Hunter10I.bmp" />
+    <None Include="Resources\Hunter10II.bmp" />
+    <None Include="Resources\Hunter10III.bmp" />
+    <None Include="Resources\Hunter10IV.bmp" />
+    <None Include="Resources\Hunter0_1.bmp" />
+    <None Include="Resources\Hunter0_1I.bmp" />
+    <None Include="Resources\Hunter0_1II.bmp" />
+    <None Include="Resources\Hunter0_1III.bmp" />
+    <None Include="Resources\Hunter0_1IV.bmp" />
+    <None Include="Resources\Apple.bmp" />
+    <None Include="Resources\Projectile_10.bmp" />
+    <None Include="Resources\Projectile0_1.bmp" />
+    <None Include="Resources\Projectile01.bmp" />
+    <None Include="Resources\Projectile10.bmp" />
+    <None Include="Resources\dead.bmp" />
+    <None Include="Resources\dead1.bmp" />
+    <None Include="Resources\dead2.bmp" />
+    <None Include="Resources\dead3.bmp" />
+    <None Include="Resources\dead4.bmp" />
+    <None Include="Resources\pause.bmp" />
+    <None Include="Resources\play.bmp" />
+    <None Include="Resources\pause1.bmp" />
+    <None Include="Resources\play1.bmp" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\Sound1.png" />
+    <None Include="Resources\Exit.png" />
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\New.png" />
+    <None Include="Resources\Sound.png" />
+    <None Include="Resources\Exit2 %282%29.png" />
+    <None Include="Resources\Exit2 %283%29.png" />
+    <None Include="Resources\Exit2 %284%29.png" />
+    <None Include="Resources\Exit2 %285%29.png" />
+    <None Include="Resources\Exit2 %281%29.png" />
+    <None Include="Resources\22.mp3" />
+    <None Include="Resources\22 %28online-audio-converter.com%29.wav" />
+    <None Include="Resources\136826_Pacman_Eating_Ghost_Sound_Effect.wav" />
+    <None Include="Resources\9b0c7a_Pacman_Eating_Cherry_Sound_Effect.wav" />
+    <Content Include="Resources\Spirit\Down\TankImg01.bmp" />
+    <Content Include="Resources\Spirit\Down\TankImg01I.bmp" />
+    <Content Include="Resources\Spirit\Down\TankImg01II.bmp" />
+    <Content Include="Resources\Spirit\Down\TankImg01III.bmp" />
+    <Content Include="Resources\Spirit\Down\TankImg01IV.bmp" />
+    <Content Include="Resources\Spirit\LEFT\TankImg_10.bmp" />
+    <Content Include="Resources\Spirit\LEFT\TankImg_10I.bmp" />
+    <Content Include="Resources\Spirit\LEFT\TankImg_10II.bmp" />
+    <Content Include="Resources\Spirit\LEFT\TankImg_10III.bmp" />
+    <Content Include="Resources\Spirit\LEFT\TankImg_10IV.bmp" />
+    <Content Include="Resources\Spirit\RIGHT\TankImg10.bmp" />
+    <Content Include="Resources\Spirit\RIGHT\TankImg10I.bmp" />
+    <Content Include="Resources\Spirit\RIGHT\TankImg10II.bmp" />
+    <Content Include="Resources\Spirit\RIGHT\TankImg10III.bmp" />
+    <Content Include="Resources\Spirit\RIGHT\TankImg10IV.bmp" />
+    <Content Include="Resources\Spirit\UP\TankImg0_1.bmp" />
+    <Content Include="Resources\Spirit\UP\TankImg0_1I.bmp" />
+    <Content Include="Resources\Spirit\UP\TankImg0_1II.bmp" />
+    <Content Include="Resources\Spirit\UP\TankImg0_1III.bmp" />
+    <Content Include="Resources\Spirit\UP\TankImg0_1IV.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

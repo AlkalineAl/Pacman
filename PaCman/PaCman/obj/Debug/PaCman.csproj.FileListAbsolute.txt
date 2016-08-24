@@ -1,0 +1,20 @@
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\bin\Debug\PaCman.exe.config
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\bin\Debug\PaCman.exe
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\bin\Debug\PaCman.pdb
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.csprojResolveAssemblyReference.cache
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.Properties.Resources.resources
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.csproj.GenerateResource.Cache
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.exe
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.pdb
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.Controller_MainForm.resources
+D:\users\alexey\documents\visual studio 2012\Projects\PaCman\PaCman\obj\Debug\PaCman.View.resources
+D:\PaCman\PaCman\bin\Debug\PaCman.exe.config
+D:\PaCman\PaCman\obj\Debug\PaCman.exe
+D:\PaCman\PaCman\obj\Debug\PaCman.pdb
+D:\PaCman\PaCman\bin\Debug\PaCman.exe
+D:\PaCman\PaCman\bin\Debug\PaCman.pdb
+D:\PaCman\PaCman\obj\Debug\PaCman.Controller_MainForm.resources
+D:\PaCman\PaCman\obj\Debug\PaCman.Properties.Resources.resources
+D:\PaCman\PaCman\obj\Debug\PaCman.View.resources
+D:\PaCman\PaCman\obj\Debug\PaCman.csproj.GenerateResource.Cache
+D:\PaCman\PaCman\obj\Debug\PaCman.csprojResolveAssemblyReference.cache
